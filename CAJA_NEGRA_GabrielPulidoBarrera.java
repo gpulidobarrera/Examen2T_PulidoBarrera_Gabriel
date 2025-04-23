@@ -32,6 +32,17 @@ public class CAJA_NEGRA_GabrielPulidoBarrera {
 	}
 
 	//VALORES EQUIVALENCIA
+	
+	@Test
+	void verificarNombreDepartamento() { // Compruebo que el nombre que le doy es equivalente al nombre que recibo por el getnombre
+		Departamento departamentoEquivalencia = new Departamento("departamentoEquivalencia", 300);
+		assertEquals("departamentoEquivalencia", departamentoEquivalencia.getNombre());
+	}
+	@Test
+	void verificarPresupuestoDepartamento() { // Compruebo que el presupuesto que le doy es equivalente al presupuesto que recibo por el getnombre
+		Departamento departamentoEquivalencia2 = new Departamento("departamentoEquivalencia2", 300);
+		assertEquals(300, departamentoEquivalencia2.getPresupuesto());
+	}
 
 	
 
